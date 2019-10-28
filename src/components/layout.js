@@ -9,10 +9,11 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
+    const jsPath = `${__PATH_PREFIX__}/javascript/`
     let header
-
+    console.log(location.pathname)
     if (location.pathname === rootPath || location.pathname === blogPath) {
-      console.log(location.pathname)
+      
       header = (
         <h1
           style={{
