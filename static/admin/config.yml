@@ -11,7 +11,7 @@ collections:
     folder: content/blog
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: path, label: Path, required: false }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
@@ -21,7 +21,7 @@ collections:
     folder: content/javascript
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: path, label: Path, required: false }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
