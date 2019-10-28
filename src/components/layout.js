@@ -12,6 +12,7 @@ class Layout extends React.Component {
     let header
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
+      console.log(location.pathname)
       header = (
         <h1
           style={{

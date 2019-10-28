@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `My Personal Blog`,
+    title: `My Blog`,
     author: `Stephen Latham`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `A personal blog containing ideas, thoughts, and progress through learning stuff`,
+    siteUrl: `https://showdev.io`,
     social: {
       twitter: `kylemathews`,
     },
@@ -21,6 +21,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/javascript`,
+        name: `javascript`,
       },
     },
     {
